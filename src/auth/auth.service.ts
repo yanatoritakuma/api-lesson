@@ -35,7 +35,6 @@ export class AuthService {
       throw error;
     }
   }
-
   async login(dto: AuthDto): Promise<Jwt> {
     const user = await this.prisma.user.findUnique({
       where: {
