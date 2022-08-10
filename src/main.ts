@@ -12,6 +12,7 @@ async function bootstrap() {
     credentials: true,
     origin: ['http://localhost:3000', 'https://next-nest-zeta.vercel.app'],
   });
+
   app.use(cookieParser());
   app.use(
     csurf({
