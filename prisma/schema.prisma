@@ -17,7 +17,7 @@ model User {
   email String @unique
   hashedPassword String
   nickName String?
-  task Task[]
+  tasks Task[]
 }
 
 model Task {
